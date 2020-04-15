@@ -4,4 +4,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Boot css */
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.w33{
+    width: 33.3%;
+}
+.w50{
+    width: 50%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
 
+/* Estilização da pagina */
+header{background: #673AB7; padding: 10px 0;}
+header .logo{font-weight: 600; font-family: 'Oxygen', sans-serif; text-transform: uppercase; color: white;padding: 10px 0;}
+nav.desktop ul{list-style: none; padding: 10px 0;}
+nav.desktop li{display: inline-block; text-transform: uppercase; padding: 0 25px; font-weight: 400; 
+font-family: 'Oxygen', sans-serif;}
+nav.desktop a{color: #fff; text-decoration: none; }
+
+.mobile{display: none;}
+
+.txt-footer{
+        text-align: center;
+}
