@@ -17,13 +17,13 @@
     
         <header>
             <div class="center">
-            <div class="logo left">Php Code</div>
+            <div class="logo left"><i class="fas fa-code"></i> Php Code <i class="fas fa-stream"></i></div>
             <nav class="desktop right">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href=""><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href=""><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li><a href=""><i class="fas fa-users-cog"></i> Serviços</a></li>
+                    <li><a href=""><i class="fas fa-comment-dots"></i> Contato</a></li>
                 </ul>
             </nav>
 
