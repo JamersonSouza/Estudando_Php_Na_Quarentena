@@ -196,7 +196,8 @@
         <p class="txt-footer">Todos os direitos Reservados.</p>
 
     </footer>
-
+    <script src="assets/js/jquery-3.5.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/006642858d.js"></script>
 </body>
 
