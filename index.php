@@ -29,6 +29,9 @@
 
 
             <nav class="mobile right">
+                <div class="menu-mobile">
+                <i class="fas fa-bars"></i>
+                </div>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Sobre</a></li>
@@ -39,19 +42,28 @@
         </div>
             <div class="clear"></div>
         </header>
-        <div class="container">
+
         <section class="banner-main">
-            <form method="post">
+        <div class="overlay"></div>
+        <div class="center">
+            <form method="post" class="form-main">
                 <h2>Qual seu melhor email?</h2>
                 <input type="email" required name="email">
                 <input type="submit" name="acao" value="Cadastre-se!">
             </form>
+            </div>
         </section>
 
+        <div class="container">
         <section class="descricao-autor">
             <div class="w50 left">
                 <h2>Jamerson Souza</h2>
                 <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Pariatur amet esse et voluptas
+                    , velit odio quisquam mollitia dolor vero soluta e
+                    os, voluptatibus id rerum deserunt consectetur
+                    veritatis error assumenda aliquid.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Pariatur amet esse et voluptas
                     , velit odio quisquam mollitia dolor vero soluta e
                     os, voluptatibus id rerum deserunt consectetur
@@ -61,54 +73,58 @@
 
             <div class="w50 left">
                 <!--Imagem -->
-                <img src="assets/myfoto.jpg" alt="" />
+                <img class="right" src="assets/myfoto.jpg" alt="" />
             </div>
 
             <div class="clear"></div>
-
+</div>
         </section>
 
         <section class="especialidades">
-            <h2 clas="title">Especialidades</h2>
+            <div class="container">
+            <h2 class="title">Especialidades</h2>
             <div class="w33 left box-espec">
                 <h3><i class="fab fa-css3-alt"></i></h3>
-                <h3>CSS3</h3>
-                <h3>Lorem ipsum, dolor sit amet
+                <h4>CSS3</h3>
+                <p>Lorem ipsum, dolor sit amet
                     consectetur adipisicing elit. Earum
                     repudiandae nesciunt facilis cum por
                     ro quo laborum vel cupiditate ratione
                     beatae? Unde veniam recusandae place
                     at saepe similique sunt numquam aut
-                    sit.</h3>
+                    sit.</p>
             </div>
 
             <div class="box-espec w33 left">
                 <h3><i class="fab fa-html5"></i></h3>
-                <h3>HTML 5 </h3>
-                <h3>Lorem ipsum, dolor sit amet
+                <h4>HTML 5 </h3>
+                <p>Lorem ipsum, dolor sit amet
                     consectetur adipisicing elit. Earum
                     repudiandae nesciunt facilis cum por
                     ro quo laborum vel cupiditate ratione
                     beatae? Unde veniam recusandae place
                     at saepe similique sunt numquam aut
-                    sit.</h3>
+                    sit.</p>
             </div>
 
 
             <div class="box-espec w33 left">
                 <h3><i class="fab fa-js-square"></i></h3>
-                <h3>Javascript</h3>
-                <h3>Lorem ipsum, dolor sit amet
+                <h4>Javascript</h3>
+                <p>Lorem ipsum, dolor sit amet
                     consectetur adipisicing elit. Earum
                     repudiandae nesciunt facilis cum por
                     ro quo laborum vel cupiditate ratione
                     beatae? Unde veniam recusandae place
                     at saepe similique sunt numquam aut
-                    sit.</h3>
+                    sit.</p>
+            </div>
+            <div class="clear"></div>
             </div>
         </section>
         <!-- SECTION PARA DEPOIMENTOS E SERVIÇOS -->
         <section class="extras">
+            <div class="center">
             <div class="w50 left">
                 <h2 class="title">Depoimentos</h2>
                 <div class="depoimento-single">
@@ -143,7 +159,6 @@
                 </div>
             </div>
 
-
             <!-- INICIO DOS SERVIÇOS FIM DO DEPOIMENTOS -->
 
 
@@ -171,11 +186,11 @@
                         </li>
                     </ul>
                 </div>
-
+                </div>
                 <div class="clear"></div>
+            </div>
         </section>
-    </div>
-    <div class="clear"></div>
+        <div class="clear"></div>
     <footer class="rodape">
 
         <p class="txt-footer">Todos os direitos Reservados.</p>
