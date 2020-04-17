@@ -37,6 +37,7 @@ img{
     width: 100%;
     max-width: 350px;
 }
+input{border: none;}
 
 /* Estilização da pagina */
 header{background: #673AB7; padding: 10px 0;}
@@ -52,6 +53,7 @@ nav.desktop a{color: #fff; text-decoration: none; }
     height: 600px;
     background-image: url('../bg-main.png');
     background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -86,7 +88,6 @@ nav.desktop a{color: #fff; text-decoration: none; }
 
 .form-main input[type=submit]{
     width: 100%;
-    border: none;
     text-transform: uppercase;
     margin-top: 8px;
     height: 66px;
@@ -164,6 +165,109 @@ text-align: center;}
         text-align: center;
 }
 
+/* Estilização Page 404 */
+.error{
+    min-height: 660px;
+    background-image: url('../404.jpg');
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.msg-error{
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    transition: 1s;
+    color: #000;
+}
+.msg-error a{text-decoration: none; color: #000;}
+.msg-error:hover a{color: #512DA8;}
+
+
+/* Estilização Form Contato */
+.contato-container{
+    padding: 142px 0;
+    text-align: center;
+    min-height: 590px;
+    background-image: url('../background_contato.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contato-container input[type=text]{
+	margin:8px 0;
+	width: 100%;
+    height: 50px;
+    border-radius: 12px;
+	border:1px solid #ccc;
+	font-size: 16px;
+	max-width: 800px;
+    color: #444;
+    padding: 20px;
+}
+
+.contato-container textarea{
+    padding: 20px;
+    border-radius: 12px;
+	margin:8px 0;
+	width: 100%;
+	height: 120px;
+	border:1px solid #ccc;
+	padding-left: 18px;
+	font-size: 16px;
+	max-width: 800px;
+	color: #444;
+}
+
+.contato-container input[type=submit]{
+    background: rgb(48, 14, 87);
+    border-bottom: 2px solid rgb(107, 25, 201);
+	width: 180px;
+    height: 40px;
+    font-size: 1.2em;
+    font-family: 'Ubuntu';
+	color: white;
+	cursor: pointer;
+}
+
+
+/* slide na home */
+
+section.banner{
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+}
+.banner-single{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Bolinhas para navegação */
+.bullets{position: absolute; z-index: 5; bottom: 10px; left: 50%; transform: translate(-50%, -50%);}
+.bullets span{
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #ccc;
+}
+.bullets > .active-slide{
+    background-color: #fff;
+}
+
+
 /* Responsividade  Seção Autor*/
 @media screen and (max-width: 667px){
     .w50{
@@ -171,8 +275,10 @@ text-align: center;}
         width: 100%;
     }
     img{display: block; margin: 0 auto; 
-    float: none !important;}
+    float: none !important;}    
+    .error{background-size: 100%;}
 }
+
 @media screen and (max-width: 842px){
     .w50{
         padding: 20px;
@@ -185,6 +291,9 @@ text-align: center;}
     .box-espec{margin: 0; padding: 40px 20px;}
     img{display: block; margin: 0 auto; max-width: 400px;
     float: none !important;}
+    .error{background-size: 100%;}
+    
+    
 
 }
 /* Responsividade do Header */
@@ -202,4 +311,7 @@ text-align: center;}
     font-weight: 600; padding: 8px 0;}
 
     nav.mobile li a{text-decoration: none; color: #444; display: block;}
+
+    .msg-error{margin-top: 60px;}
+
 }

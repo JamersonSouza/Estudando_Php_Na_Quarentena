@@ -11,8 +11,7 @@
         } else {
             listaMenu.fadeOut();
         }*/
-    // metedo melhor para visualização
-       listaMenu.slideToggle();
+  
 
         //abrir e fechar sem efeito,
       
@@ -22,6 +21,31 @@
             listaMenu.hide();
         }
         */
+       if(listaMenu.is(':hidden') == true){
+           //outra opção || var icon = $('.menu-mobile i ');
+          var icon =  $('.menu-mobile').find('i');
+          icon.removeClass('fa-bars');
+          icon.addClass('fa-times');
+          listaMenu.slideToggle();
+       }else{
+        var icon =  $('.menu-mobile').find('i');
+        icon.removeClass('fa-times');
+        icon.addClass('fa-bars');
+        listaMenu.slideToggle();
+       }
+
+     // metedo melhor para visualização
+       //fechado
+       //<i class="fas fa-times"></i>
+       //aberto
+      // <i class="fas fa-bars"></i>
     });
+
+    if($('target').length > 0){
+        // O elemento existe, portanto precisamos dar um scroll em algum elemento
+        var element = '#'+$('target').attr('target');
+        var divScroll = $(element).offset().top;
+        $('html,body').animate({scrollTop:divScroll}, 2000);
+    }
 
 })();

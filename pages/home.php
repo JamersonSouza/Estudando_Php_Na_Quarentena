@@ -35,6 +35,18 @@
 </div>
         </section>
 
+        <section class="banner">
+            <div class="overlay"></div>
+            <div style="background-image: url('<?php echo INCLUDE_PATH; ?>assets/img_1.jpg')" class="banner-single"></div>
+            <div style="background-image: url('<?php echo INCLUDE_PATH; ?>assets/img_2.jpg')" class="banner-single"></div>
+            <div style="background-image: url('<?php echo INCLUDE_PATH; ?>assets/img_3.jpg')" class="banner-single"></div>
+            <div class="bullets">
+                <span class="active-slide"></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
         <section class="especialidades">
             <div class="container">
             <h2 class="title">Especialidades</h2>
@@ -82,7 +94,7 @@
             <div class="center">
             <div class="w50 left">
                 <h2 class="title">Depoimentos</h2>
-                <div class="depoimento-single">
+                <div id="depoimentos" class="depoimento-single">
                     <p class="dep-descricao">Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Aliquid autem, fugit officia
                         impedit voluptatibus doloribus provident esse
@@ -119,7 +131,7 @@
 
             <div class="w50 left">
                 <h2 class="title">Serviços</h2>
-                <div class="servicos">
+                <div class="servicos" id="servicos">
                     <ul>
                         <li>Lorem ipsum dolor sit a
                             met consectetur adipisicing
