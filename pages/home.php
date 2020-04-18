@@ -1,9 +1,35 @@
 <section class="banner-main">
         <div class="overlay"></div>
         <div class="center">
-            <form method="post" class="form-main">
+            <?php
+                if(isset($_POST['acao'])){
+                    //enviou formlario
+                    if($_POST['email'] != ''){
+                        $email = $_POST['email'];
+                                       
+                    }else{
+                        echo '<script>alert("campo não pode estar vazio");</script>';
+                    }
+                    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+
+                        $mail = new Email('smtp.gmail.com', 'ineoup@gmail.com', 'zero81@10', 'Jamerson Souza');
+                        $mail->addAdress('neouseroff@gmail.com', 'neo');
+                        $info = array('assunto'=>'Um Novo Email', 'corpo' => $email);
+                        $mail->formatarEmail($info);
+                        if($mail->enviarEmail()){
+                            echo '<script>alert("Enviado com sucesso!");</script>';
+                        }else{
+                            echo '<script>alert("Algo deu errado.");</script>';
+                        }
+                        //TUDO CERTO EMAIL ENVIADO
+                    }else{
+                        echo '<script>alert("Email Invalido");</script>';
+                    }
+            }
+            ?>
+            <form method="post"  class="form-main">
                 <h2>Qual seu melhor email?</h2>
-                <input type="email" required name="email">
+                <input type="email" name="email">
                 <input type="submit" name="acao" value="Cadastre-se!">
             </form>
             </div>
